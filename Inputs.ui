@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>994</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 170, 255);
+background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="txt_rows">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;Bahnschrift Condensed&quot;;</string>
+    </property>
+    <property name="maxLength">
+     <number>5</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_rc">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>180</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 127);
+font: 75 12pt &quot;Candara&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_columns">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>110</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;Bahnschrift Condensed&quot;;</string>
+    </property>
+    <property name="maxLength">
+     <number>5</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_cost">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>460</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;Bahnschrift Condensed&quot;;</string>
+    </property>
+    <property name="maxLength">
+     <number>5</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cost">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>530</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 127);
+font: 75 12pt &quot;Candara&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_suppl_length">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>30</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;Bahnschrift Condensed&quot;;</string>
+    </property>
+    <property name="maxLength">
+     <number>5</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnsup_De_length">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>170</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 127);
+font: 75 12pt &quot;Candara&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_demand_length">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>110</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;Bahnschrift Condensed&quot;;</string>
+    </property>
+    <property name="maxLength">
+     <number>5</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btndemand_Supply_Values">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>530</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 127);
+font: 75 12pt &quot;Candara&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>34</y>
+      <width>141</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 12pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Number Of Rows</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>141</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 12pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Number Of Columns</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>460</y>
+      <width>141</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 12pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Enter cost Values</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_cost">
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>382</y>
+      <width>801</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(85, 170, 127);
+background-color: rgb(170, 170, 255);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>30</y>
+      <width>141</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 12pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Supply Length</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>110</y>
+      <width>141</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 12pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Demand Length</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnfinish">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>590</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 127);
+background-color: rgb(0, 170, 0);
+font: 75 12pt &quot;Candara&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Finish...</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_sup_De_Values">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>460</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;Bahnschrift Condensed&quot;;</string>
+    </property>
+    <property name="maxLength">
+     <number>5</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>460</y>
+      <width>141</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 12pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Supply_Demand Values</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_Currency">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>300</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 127);
+font: 75 12pt &quot;Candara&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_Currency">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>250</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;Bahnschrift Condensed&quot;;</string>
+    </property>
+    <property name="maxLength">
+     <number>5</number>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>240</y>
+      <width>141</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 12pt &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Currency</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
